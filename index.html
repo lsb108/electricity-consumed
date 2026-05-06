@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính toán Điện năng Tiêu thụ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tính toán Điện năng Tiêu thụ Hàng ngày</h1>
+
+        <div class="input-section">
+            <h2>Thêm Thiết bị Mới</h2>
+            <div class="input-group">
+                <label for="applianceName">Tên Thiết bị:</label>
+                <input type="text" id="applianceName" placeholder="Ví dụ: Tủ lạnh">
+            </div>
+            <div class="input-group">
+                <label for="kwhConsumption">Tiêu thụ (kWh):</label>
+                <input type="number" id="kwhConsumption" placeholder="Nhập số kWh" min="0">
+            </div>
+            <button onclick="addAppliance()">Thêm vào Danh sách</button>
+        </div>
+
+        <h2>Danh sách Thiết bị</h2>
+        <table id="applianceTable">
+            <thead>
+                <tr>
+                    <th>Tên Thiết bị</th>
+                    <th>Tiêu thụ (kWh)</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody id="applianceList">
+                <!-- Appliances will be listed here by JavaScript -->
+            </tbody>
+        </table>
+
+        <div class="total-section">
+            <h2>Tổng Tiêu thụ Hàng ngày: <span id="totalKwh">0.00</span> kWh</h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
