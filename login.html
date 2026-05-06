@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login - electricity-consumed (demo)</title>
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+  <main class="container">
+    <h1>electricity-consumed — Login (demo)</h1>
+
+    <form id="authForm" class="card">
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" required />
+      </div>
+
+      <div class="actions">
+        <button type="submit" id="loginBtn">Login</button>
+        <button type="button" id="registerBtn">Register</button>
+      </div>
+
+      <p class="note">Demo account: <strong>user@example.com</strong> / <strong>password123</strong></p>
+      <p id="msg" class="msg"></p>
+    </form>
+  </main>
+
+  <script src="js/login.js"></script>
+</body>
+</html>
